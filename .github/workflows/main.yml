@@ -32,6 +32,6 @@ jobs:
       - name: Nextflow run ex2
         run: |
           curl -fsSL get.nextflow.io | bash
-          ./nextflow run . 
+          ./nextflow run . -process.echo
         env:
           NXF_ANSI_LOG: false
